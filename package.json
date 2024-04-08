@@ -1,0 +1,54 @@
+{
+  "name": "@artificialmuseum/map",
+  "version": "0.0.1-alpha.0",
+  "author": "Wizards & Witches",
+  "homepage": "https://grundstein.github.io/gms",
+  "license": "AGPL-3.0",
+  "private": true,
+  "description": "@artificialmuseum/map. serves, proxies, caches and reformats tile images for use in leaflet.",
+  "main": "src/index.mjs",
+  "engines": {
+    "node": ">=14.14.0"
+  },
+  "engineStrict": true,
+  "type": "module",
+  "scripts": {
+    "start": "npm run dev",
+    "format": "f -w",
+    "dev": "node node_modules/@grundstein/gss/src/bin.mjs --dir ./docs --port 8003 --cors '*'",
+    "build": "node node_modules/@grundstein/prepare-static-files/src/bin.mjs --no-webp --no-optimize-images --dirs docs"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artificialmuseum/map.git"
+  },
+  "bugs": {
+    "url": "https://github.com/artificialmuseum/map/issues"
+  },
+  "devDependencies": {
+    "@grundstein/commons": "0.0.10",
+    "@grundstein/gss": "0.0.14",
+    "@grundstein/prepare-static-files": "0.0.12",
+    "@magic/cli": "0.0.46",
+    "@magic/format": "0.0.59",
+    "@magic/fs": "0.0.30",
+    "@magic/log": "0.1.18",
+    "@magic/test": "0.2.18",
+    "mmmagic": "0.5.3"
+  },
+  "keywords": [
+    "grundstein",
+    "static",
+    "page",
+    "server"
+  ],
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "github": "jaeh"
+    }
+  ]
+}
